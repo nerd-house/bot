@@ -26,12 +26,6 @@ async def status():
 
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'{len(client.guilds)} Servers! |.help '))
     await asyncio.sleep(5)
-    # await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f'Happy birthday my developer SCHWITZ#3875(I am writing this for myself lmfao lack of co-workes XD)'))
-    # await sleep(15)
-    # await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(client.users)} users |.help"))
-    # await asyncio.sleep(5)
-    # await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Happy birthday 【𝔽𝕆】✨Death_Surfing#3093"))
-    await asyncio.sleep(5)
     await client.loop.create_task(status())
 
 async def on_message( message):
