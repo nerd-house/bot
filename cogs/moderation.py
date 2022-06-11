@@ -40,7 +40,7 @@ class Moderation(commands.Cog):
             embed.timestamp = datetime.datetime.utcnow()
             await ctx.send(embed=embed)
             await member.send(embed=embed)
-        except:
+        except: 
             await member.ban(reason=reason)
 
 
